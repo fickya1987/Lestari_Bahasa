@@ -1,0 +1,136 @@
+/* General Reset */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('Lestari_Bahasa_Transparent_Background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Light overlay */
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+/* Styling for Lestari Bahasa Title */
+header h1 {
+    font-size: 4rem; /* Memperbesar ukuran font */
+    margin-bottom: 5px; /* Mengurangi jarak antara judul dan deskripsi */
+    color: #2c3e50; /* Warna biru gelap modern */
+    font-family: 'Orbitron', sans-serif; /* Font futuristik modern */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.6); /* Efek shadow */
+    letter-spacing: 3px; /* Jarak antar huruf untuk kesan bersih */
+    text-align: center; /* Tengah agar simetris */
+}
+
+/* Styling for Subtext Below the Title */
+header p {
+    font-size: 1.8rem; /* Sedikit lebih besar untuk keseimbangan */
+    color: #7f8c8d; /* Abu-abu modern */
+    margin-top: 0px; /* Menghapus jarak atas */
+    text-align: center;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling for Feature Boxes */
+.feature-box {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Futuristik colorful gradient */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 30%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow untuk kedalaman */
+    color: #fff; /* Warna teks putih untuk kontras */
+}
+
+/* Hover Effect for Feature Boxes */
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Efek hover */
+}
+
+.feature-image {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+/* Styling for Titles Inside Feature Boxes */
+.feature-box h2 {
+    font-size: 1.8rem; /* Membesarkan judul fitur */
+    margin-bottom: 15px;
+    color: #f9f9f9; /* Sedikit lebih terang */
+    font-family: 'Orbitron', sans-serif; /* Font futuristik */
+}
+
+/* Styling for Descriptions Inside Feature Boxes */
+.feature-box p {
+    font-size: 1.2rem; /* Membesarkan teks deskripsi */
+    color: #e0e0e0; /* Warna abu-abu terang */
+    margin-bottom: 20px;
+    line-height: 1.5; /* Jarak antar baris */
+}
+
+/* Styling for Buttons Inside Feature Boxes */
+.feature-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Gradient futuristik untuk tombol */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.feature-link:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f); /* Efek hover */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #888;
+}
