@@ -60,7 +60,7 @@ main {
     display: flex;
     justify-content: space-around; /* Horizontal alignment */
     flex-wrap: wrap; /* Wrap on smaller screens */
-    gap: 40px; /* Add more space between feature boxes */
+    gap: 30px; /* Tambahkan jarak antar kotak fitur */
     padding: 20px;
     max-width: 1200px;
 }
@@ -71,9 +71,10 @@ main {
     border-radius: 20px;
     padding: 30px;
     text-align: center;
-    width: 35%; /* Larger for visibility */
+    width: 35%; /* Consistent width */
     min-width: 300px; /* Minimum size */
     max-width: 350px; /* Consistent width */
+    margin-bottom: 20px; /* Jarak bawah antar kotak fitur */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #333;
@@ -139,12 +140,13 @@ footer p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Stack boxes vertically */
+        flex-direction: column; /* Kotak tersusun vertikal */
         align-items: center;
+        gap: 20px; /* Jarak antar fitur untuk layar kecil */
     }
 
     .feature-box {
-        width: 90%; /* Full width for smaller screens */
+        width: 90%; /* Lebar penuh untuk layar kecil */
     }
 
     header h1 {
