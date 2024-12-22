@@ -8,7 +8,6 @@ body, h1, h2, p, a {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background: url('Lestari_Bahasa_Transparent_Background.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -17,79 +16,74 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Fit all screens */
-    position: relative;
+    min-height: 100vh;
 }
 
-/* Header */
+/* Header Styling */
 header {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 2.8rem; /* Adjusted for smaller screens */
-    margin-bottom: 8px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     color: #2c3e50;
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header p {
-    font-size: 1.1rem; /* Reduced for readability */
+    font-size: 1.1rem;
     color: #7f8c8d;
-    margin-top: 5px;
 }
 
 /* Main Content */
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Adjusted spacing */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center align the feature boxes */
+    gap: 20px; /* Space between feature boxes */
+    padding: 20px;
     width: 100%;
-    padding: 5px;
 }
 
-/* Feature Box */
+/* Feature Box Styling */
 .feature-box {
     background: linear-gradient(135deg, #00c6ff, #0072ff);
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 95%; /* Default for small devices */
-    max-width: 220px; /* Smaller width for better fit */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%; /* Default for small devices */
+    max-width: 280px; /* Constrain width on larger devices */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
 .feature-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .feature-image {
-    width: 90px; /* Adjusted size */
-    margin-bottom: 10px;
+    width: 100px;
+    margin-bottom: 15px;
 }
 
 /* Feature Title */
 .feature-box h2 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     color: #f9f9f9;
     font-family: 'Orbitron', sans-serif;
 }
 
 /* Feature Description */
 .feature-box p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-bottom: 15px;
     color: #e0e0e0;
-    margin-bottom: 10px;
-    line-height: 1.4;
 }
 
 /* Feature Button */
@@ -98,50 +92,46 @@ main {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(135deg, #ff512f, #dd2476);
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 8px 15px;
+    border-radius: 5px;
     font-size: 0.9rem;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
 .feature-link:hover {
     background: linear-gradient(135deg, #dd2476, #ff512f);
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 
 footer p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: #888;
 }
 
-/* Responsive Adjustments */
+/* Responsive Styling */
 @media (min-width: 768px) {
+    main {
+        justify-content: space-between; /* Distribute boxes evenly */
+    }
+
     .feature-box {
-        width: 28%; /* Three boxes fit on laptop screens */
-    }
-
-    header h1 {
-        font-size: 3.2rem;
-    }
-
-    header p {
-        font-size: 1.3rem;
+        width: 30%; /* Fit three boxes on larger screens */
     }
 }
 
 @media (max-width: 768px) {
     .feature-box {
-        width: 80%; /* Better fit for smartphones */
+        width: 90%; /* Adjust to full width for smaller screens */
     }
 
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem; /* Reduce size for smaller screens */
     }
 
     header p {
