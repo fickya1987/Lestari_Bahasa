@@ -8,8 +8,7 @@ body, h1, h2, p, a, img {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('futuristic_ai_background.jpg') no-repeat center center fixed; /* Futuristic AI background */
-    background-size: cover;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Futuristic gradient */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -58,22 +57,24 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
     max-width: 1200px; /* Center content with width limit */
 }
 
 /* Feature Box Styling */
 .feature-box {
-    background: linear-gradient(135deg, #1f3b4d, #0072ff); /* Futuristic gradient */
+    background: linear-gradient(145deg, #1e3c72, #2a5298); /* Futuristic gradient */
+    border: 2px solid #ffffff33;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 45%; /* Default: Two side-by-side */
-    max-width: 350px; /* Larger boxes for eye-catching design */
+    width: 45%; /* Two boxes side-by-side */
+    max-width: 350px; /* Ensure consistent width */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     color: #fff;
+    cursor: pointer;
 }
 
 .feature-box:nth-child(3) {
@@ -177,4 +178,3 @@ footer p {
         font-size: 1.2rem;
     }
 }
-
