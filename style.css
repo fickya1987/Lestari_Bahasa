@@ -8,7 +8,8 @@ body, h1, h2, p, a, img {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Futuristic gradient */
+    background: url('ai_futuristic_background.jpg') no-repeat center center fixed; /* AI background image */
+    background-size: cover;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -64,27 +65,20 @@ main {
 
 /* Feature Box Styling */
 .feature-box {
-    background: linear-gradient(145deg, #1e3c72, #2a5298); /* Futuristic gradient */
-    border: 2px solid #ffffff33;
+    background: #ffffff; /* White box with rounded corners */
     border-radius: 15px;
     padding: 20px;
     text-align: center;
+    width: 90%; /* Default: Full width for small devices */
+    max-width: 300px; /* Limit width for larger screens */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 45%; /* Two boxes side-by-side */
-    max-width: 350px; /* Ensure consistent width */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    color: #fff;
-    cursor: pointer;
+    color: #333;
 }
 
-.feature-box:nth-child(3) {
-    width: 90%; /* Third box spans the full row */
-}
-
-/* Hover Effect */
 .feature-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Glow effect */
 }
 
 /* Feature Image */
@@ -96,15 +90,15 @@ main {
 
 /* Feature Title */
 .feature-box h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #f9f9f9;
-    font-family: 'Orbitron', sans-serif;
+    color: #0072ff;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
 }
 
 /* Feature Description */
 .feature-box p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -114,7 +108,7 @@ main {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background: linear-gradient(135deg, #ff512f, #dd2476); /* Futuristic button gradient */
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Futuristic gradient button */
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
@@ -145,18 +139,6 @@ footer p {
 
     .feature-box {
         width: 30%; /* Three boxes for larger screens */
-    }
-
-    .feature-box:nth-child(3) {
-        width: 90%; /* Maintain full row for third box */
-    }
-
-    header h1 {
-        font-size: 4rem; /* Bigger title for desktops */
-    }
-
-    header p {
-        font-size: 1.5rem;
     }
 }
 
