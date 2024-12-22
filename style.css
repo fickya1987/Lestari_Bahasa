@@ -5,6 +5,7 @@ body, h1, h2, p, a {
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -22,6 +23,7 @@ body {
     position: relative;
 }
 
+/* Overlay for Background */
 .overlay {
     position: absolute;
     top: 0;
@@ -32,89 +34,80 @@ body {
     z-index: -1;
 }
 
+/* Header Styling */
 header {
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
 }
 
-/* Styling for Lestari Bahasa Title */
 header h1 {
-    font-size: 4rem; /* Memperbesar ukuran font */
-    margin-bottom: 5px; /* Mengurangi jarak antara judul dan deskripsi */
-    color: #2c3e50; /* Warna biru gelap modern */
-    font-family: 'Orbitron', sans-serif; /* Font futuristik modern */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.6); /* Efek shadow */
-    letter-spacing: 3px; /* Jarak antar huruf untuk kesan bersih */
-    text-align: center; /* Tengah agar simetris */
+    font-size: 4rem; /* Bigger title for emphasis */
+    margin-bottom: 5px; /* Reduce space between title and description */
+    color: #2c3e50;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.6); /* Futuristic effect */
+    letter-spacing: 3px;
 }
 
-/* Styling for Subtext Below the Title */
 header p {
-    font-size: 1.8rem; /* Sedikit lebih besar untuk keseimbangan */
-    color: #7f8c8d; /* Abu-abu modern */
-    margin-top: 0px; /* Menghapus jarak atas */
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-top: 0px;
     text-align: center;
 }
 
-
-
-main {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
+/* Feature Section */
 .feature {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap; /* Allow features to wrap to new rows */
+    justify-content: center;
+    gap: 15px; /* Space between feature boxes */
+    width: 100%;
+    padding: 10px;
 }
 
-/* Styling for Feature Boxes */
+/* Feature Box Styling */
 .feature-box {
-    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Futuristik colorful gradient */
-    border-radius: 5px;
-    padding: 5px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Futuristic color */
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 10%;
-    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); /* Shadow untuk kedalaman */
-    color: #fff; /* Warna teks putih untuk kontras */
+    width: 90%; /* Default width for small devices */
+    max-width: 300px; /* Limit maximum width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
-/* Hover Effect for Feature Boxes */
+/* Feature Box Hover Effect */
 .feature-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /* Efek hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.feature-image {
-    width: 300px;
-    margin-bottom: 15px;
-}
-
-/* Styling for Titles Inside Feature Boxes */
+/* Feature Box Titles */
 .feature-box h2 {
-    font-size: 1.4rem; /* Membesarkan judul fitur */
-    margin-bottom: 10px;
-    color: #f9f9f9; /* Sedikit lebih terang */
-    font-family: 'Orbitron', sans-serif; /* Font futuristik */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f9f9f9;
+    font-family: 'Orbitron', sans-serif;
 }
 
-/* Styling for Descriptions Inside Feature Boxes */
+/* Feature Box Descriptions */
 .feature-box p {
-    font-size: 1.2rem; /* Membesarkan teks deskripsi */
-    color: #e0e0e0; /* Warna abu-abu terang */
-    margin-bottom: 10px;
-    line-height: 1.5; /* Jarak antar baris */
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-/* Styling for Buttons Inside Feature Boxes */
+/* Feature Box Links (Buttons) */
 .feature-link {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background: linear-gradient(135deg, #ff512f, #dd2476); /* Gradient futuristik untuk tombol */
-    padding: 5px 10px;
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Futuristic button */
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -122,9 +115,24 @@ main {
 }
 
 .feature-link:hover {
-    background: linear-gradient(135deg, #dd2476, #ff512f); /* Efek hover */
+    background: linear-gradient(135deg, #dd2476, #ff512f); /* Button hover effect */
 }
 
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 768px) {
+    .feature-box {
+        width: 30%; /* Fit three features in a row */
+    }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .feature-box {
+        width: 80%; /* Reduce width for small devices */
+    }
+}
+
+/* Footer Styling */
 footer {
     margin-top: 20px;
     text-align: center;
