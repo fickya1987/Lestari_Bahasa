@@ -1,10 +1,11 @@
-/* Reset dan Penyesuaian Dasar */
+/* General Reset */
 body, h1, h2, p, a, img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background: url('Lestari_Bahasa_Transparent_Background.png') no-repeat center center fixed;
@@ -35,14 +36,16 @@ header {
     height: auto;
 }
 
+/* Header Title */
 header h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
     color: #2c3e50;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #7f8c8d;
 }
 
@@ -53,43 +56,53 @@ main {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    max-width: 900px; /* Limit max width for better alignment */
 }
 
-/* Feature Box */
+/* Feature Box Styling */
 .feature-box {
     background: linear-gradient(135deg, #00c6ff, #0072ff);
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    width: 95%; /* Untuk smartphone */
-    max-width: 280px; /* Batas maksimum untuk laptop */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%; /* Two boxes side-by-side by default */
+    max-width: 280px; /* Ensure consistent width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.feature-box:nth-child(3) {
+    width: 90%; /* Make the third box span the full width */
+}
+
+/* Hover Effect */
 .feature-box:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Feature Image */
 .feature-image {
     width: 100px;
     height: auto;
     margin-bottom: 15px;
 }
 
+/* Feature Title */
 .feature-box h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
+/* Feature Description */
 .feature-box p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
+/* Feature Button */
 .feature-link {
     display: inline-block;
     text-decoration: none;
@@ -116,10 +129,18 @@ footer p {
     color: #888;
 }
 
-/* Responsif untuk Laptop dan Smartphone */
+/* Responsive Adjustments */
 @media (min-width: 768px) {
+    main {
+        justify-content: space-between;
+    }
+
     .feature-box {
-        width: 30%; /* Tiga fitur sejajar untuk layar lebih besar */
+        width: 45%; /* Two boxes side-by-side for larger screens */
+    }
+
+    .feature-box:nth-child(3) {
+        width: 90%; /* Third box spans the full row */
     }
 
     header h1 {
@@ -132,15 +153,13 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stacks boxes on smaller screens */
+        align-items: center;
+    }
+
     .feature-box {
-        width: 90%; /* Satu kolom untuk layar kecil */
-    }
-
-    header h1 {
-        font-size: 2.2rem;
-    }
-
-    header p {
-        font-size: 1rem;
+        width: 90%; /* Full width for smaller screens */
     }
 }
+
