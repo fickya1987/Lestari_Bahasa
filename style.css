@@ -8,7 +8,7 @@ body, h1, h2, p, a, img {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://stockcake.com/i/futuristic-ai-interface_1226420_684170') no-repeat center center fixed; /* AI background image */
+    background: url('https://www.platformer.news/content/images/size/w2000/image/fetch/c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https-3a-2f-2fsubstack-post-media.s3.amazonaws.com-2fpublic-2fimages-2f5a3f2b79-e682-486b-bcb3-d75e7a18d548_1024x1024.jpg') no-repeat center center fixed; /* AI background image */
     background-size: cover;
     color: #fff;
     display: flex;
