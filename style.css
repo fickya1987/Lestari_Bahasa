@@ -72,12 +72,12 @@ main {
 /* Styling for Feature Boxes */
 .feature-box {
     background: linear-gradient(135deg, #00c6ff, #0072ff); /* Futuristik colorful gradient */
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 5px;
+    padding: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     width: 30%;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow untuk kedalaman */
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); /* Shadow untuk kedalaman */
     color: #fff; /* Warna teks putih untuk kontras */
 }
 
@@ -94,8 +94,8 @@ main {
 
 /* Styling for Titles Inside Feature Boxes */
 .feature-box h2 {
-    font-size: 1.8rem; /* Membesarkan judul fitur */
-    margin-bottom: 15px;
+    font-size: 1.4rem; /* Membesarkan judul fitur */
+    margin-bottom: 10px;
     color: #f9f9f9; /* Sedikit lebih terang */
     font-family: 'Orbitron', sans-serif; /* Font futuristik */
 }
@@ -104,7 +104,7 @@ main {
 .feature-box p {
     font-size: 1.2rem; /* Membesarkan teks deskripsi */
     color: #e0e0e0; /* Warna abu-abu terang */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.5; /* Jarak antar baris */
 }
 
