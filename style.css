@@ -73,10 +73,10 @@ main {
 .feature-box {
     background: linear-gradient(135deg, #00c6ff, #0072ff); /* Futuristik colorful gradient */
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 30%;
+    width: 10%;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); /* Shadow untuk kedalaman */
     color: #fff; /* Warna teks putih untuk kontras */
 }
@@ -84,7 +84,7 @@ main {
 /* Hover Effect for Feature Boxes */
 .feature-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Efek hover */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /* Efek hover */
 }
 
 .feature-image {
@@ -114,7 +114,7 @@ main {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(135deg, #ff512f, #dd2476); /* Gradient futuristik untuk tombol */
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: bold;
