@@ -8,7 +8,8 @@ body, h1, h2, p, a, img {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1d3557, #457b9d); /* Ocean blue background */
+    background: url('Lestari_Bahasa_Transparent_Background.png') no-repeat center center fixed; /* Gunakan gambar lokal */
+    background-size: cover; /* Pastikan gambar mencakup seluruh layar */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -32,23 +33,23 @@ header {
 }
 
 .logo {
-    max-width: 100px; /* Adjusted logo size */
+    max-width: 120px; /* Adjusted logo size */
     height: auto;
 }
 
 /* Header Title */
 header h1 {
-    font-size: 3.5rem; /* Larger size for emphasis */
+    font-size: 4rem; /* Larger size for emphasis */
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #002060; /* Biru tua elegan */
     font-family: 'Orbitron', sans-serif; /* Modern and futuristic font */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Futuristic glow */
-    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    letter-spacing: 4px;
 }
 
 header p {
-    font-size: 1.3rem;
-    color: #e0e0e0;
+    font-size: 1.5rem; /* Slightly larger description */
+    color: #002060; /* Biru tua elegan */
     margin-top: 10px;
     text-align: center;
 }
@@ -56,52 +57,53 @@ header p {
 /* Main Content */
 main {
     display: flex;
-    justify-content: space-around; /* Spread the features horizontally */
-    flex-wrap: wrap; /* Ensure responsiveness */
-    gap: 20px;
+    justify-content: space-around; /* Horizontal alignment */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 30px; /* Spacing between feature boxes */
     padding: 20px;
     max-width: 1200px;
 }
 
 /* Feature Box Styling */
 .feature-box {
-    background: #ffffff; /* White box */
-    border-radius: 15px;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    border-radius: 20px;
+    padding: 30px;
     text-align: center;
-    width: 30%; /* Fit three boxes side by side */
-    min-width: 250px;
-    max-width: 300px; /* Ensure consistent width */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 35%; /* Larger for visibility */
+    min-width: 300px; /* Minimum size */
+    max-width: 350px; /* Consistent width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #333;
 }
 
 .feature-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Glow effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Glow on hover */
 }
 
 /* Feature Image */
 .feature-image {
-    width: 120px;
+    width: 150px; /* Larger size */
     height: auto;
     margin-bottom: 20px;
 }
 
 /* Feature Title */
 .feature-box h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #0072ff;
+    color: #1ca3ec;
     font-family: 'Orbitron', sans-serif; /* Futuristic font */
 }
 
 /* Feature Description */
 .feature-box p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     line-height: 1.6;
+    color: #555;
 }
 
 /* Feature Button */
@@ -109,16 +111,16 @@ main {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background: linear-gradient(135deg, #ff512f, #dd2476);
-    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Vibrant gradient */
+    padding: 12px 25px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: background 0.3s ease;
 }
 
 .feature-link:hover {
-    background: linear-gradient(135deg, #dd2476, #ff512f);
+    background: linear-gradient(135deg, #ffc371, #ff5f6d);
 }
 
 /* Footer Styling */
@@ -135,7 +137,7 @@ footer p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Stack features vertically on small screens */
+        flex-direction: column; /* Stack boxes vertically */
         align-items: center;
     }
 
@@ -144,10 +146,10 @@ footer p {
     }
 
     header h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     header p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
