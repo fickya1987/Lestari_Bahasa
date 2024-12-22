@@ -8,7 +8,7 @@ body, h1, h2, p, a, img {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('ai_futuristic_background.jpg') no-repeat center center fixed; /* AI background image */
+    background: url('ai_background.png') no-repeat center center fixed; /* AI background image */
     background-size: cover;
     color: #fff;
     display: flex;
