@@ -5,6 +5,7 @@ body, h1, h2, p, a {
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -17,91 +18,89 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Allow content to fit all devices */
+    min-height: 100vh; /* Fit all screens */
     position: relative;
 }
 
+/* Header */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Lestari Bahasa Title */
 header h1 {
-    font-size: 3rem; /* Reduce font size for responsiveness */
-    margin-bottom: 10px;
+    font-size: 2.8rem; /* Adjusted for smaller screens */
+    margin-bottom: 8px;
     color: #2c3e50;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     letter-spacing: 2px;
-    text-align: center;
 }
 
 header p {
-    font-size: 1.2rem; /* Adjusted font size */
+    font-size: 1.1rem; /* Reduced for readability */
     color: #7f8c8d;
     margin-top: 5px;
-    text-align: center;
 }
 
 /* Main Content */
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap; /* Allow boxes to wrap on small screens */
-    gap: 15px; /* Spacing between boxes */
-    padding: 10px;
+    gap: 10px; /* Adjusted spacing */
     width: 100%;
+    padding: 5px;
 }
 
-/* Feature Box Styling */
+/* Feature Box */
 .feature-box {
     background: linear-gradient(135deg, #00c6ff, #0072ff);
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 90%; /* Adjust for mobile-first */
-    max-width: 250px; /* Smaller max width for responsiveness */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 95%; /* Default for small devices */
+    max-width: 220px; /* Smaller width for better fit */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
 .feature-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .feature-image {
-    width: 100px; /* Adjusted image size */
-    margin-bottom: 15px;
+    width: 90px; /* Adjusted size */
+    margin-bottom: 10px;
 }
 
-/* Feature Box Titles */
+/* Feature Title */
 .feature-box h2 {
-    font-size: 1.5rem; /* Adjusted font size */
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
     color: #f9f9f9;
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Feature Box Descriptions */
+/* Feature Description */
 .feature-box p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #e0e0e0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.4;
 }
 
-/* Feature Box Links (Buttons) */
+/* Feature Button */
 .feature-link {
     display: inline-block;
     text-decoration: none;
     color: #fff;
     background: linear-gradient(135deg, #ff512f, #dd2476);
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
     font-weight: bold;
     transition: background 0.3s;
 }
@@ -110,39 +109,39 @@ main {
     background: linear-gradient(135deg, #dd2476, #ff512f);
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 
 footer p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #888;
 }
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
     .feature-box {
-        width: 30%; /* Allow three boxes in a row for larger screens */
+        width: 28%; /* Three boxes fit on laptop screens */
     }
 
     header h1 {
-        font-size: 3.5rem; /* Slightly larger on larger screens */
+        font-size: 3.2rem;
     }
 
     header p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 768px) {
     .feature-box {
-        width: 80%; /* Adjust width for smaller devices */
+        width: 80%; /* Better fit for smartphones */
     }
 
     header h1 {
-        font-size: 2.5rem; /* Smaller title for smartphones */
+        font-size: 2.5rem;
     }
 
     header p {
