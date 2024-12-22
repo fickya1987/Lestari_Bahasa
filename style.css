@@ -8,13 +8,13 @@ body, h1, h2, p, a, img {
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('ai_background.png') no-repeat center center fixed; /* Lokal gambar */
-    background-size: cover; /* Cover seluruh layar */
+    background: linear-gradient(135deg, #1d3557, #457b9d); /* Ocean blue background */
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 /* Header Styling */
@@ -32,17 +32,17 @@ header {
 }
 
 .logo {
-    max-width: 100px; /* Ukuran logo */
+    max-width: 100px; /* Adjusted logo size */
     height: auto;
 }
 
 /* Header Title */
 header h1 {
-    font-size: 3.5rem; /* Ukuran besar untuk judul */
+    font-size: 3.5rem; /* Larger size for emphasis */
     margin-bottom: 10px;
     color: #ffffff;
-    font-family: 'Orbitron', sans-serif; /* Font futuristik */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Efek bayangan */
+    font-family: 'Orbitron', sans-serif; /* Modern and futuristic font */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Futuristic glow */
     letter-spacing: 3px;
 }
 
@@ -56,29 +56,30 @@ header p {
 /* Main Content */
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around; /* Spread the features horizontally */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    gap: 20px;
     padding: 20px;
     max-width: 1200px;
 }
 
 /* Feature Box Styling */
 .feature-box {
-    background: #ffffff; /* Kotak putih */
+    background: #ffffff; /* White box */
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    width: 90%; /* Default untuk perangkat kecil */
-    max-width: 300px; /* Ukuran maksimum */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    width: 30%; /* Fit three boxes side by side */
+    min-width: 250px;
+    max-width: 300px; /* Ensure consistent width */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #333;
 }
 
 .feature-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Efek hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Glow effect */
 }
 
 /* Feature Image */
@@ -93,7 +94,7 @@ main {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #0072ff;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
 }
 
 /* Feature Description */
@@ -132,24 +133,14 @@ footer p {
 }
 
 /* Responsive Adjustments */
-@media (min-width: 768px) {
-    main {
-        justify-content: space-between; /* Spasi antar-kotak */
-    }
-
-    .feature-box {
-        width: 30%; /* Tiga kotak untuk layar besar */
-    }
-}
-
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Kotak vertikal untuk perangkat kecil */
+        flex-direction: column; /* Stack features vertically on small screens */
         align-items: center;
     }
 
     .feature-box {
-        width: 90%; /* Lebar penuh untuk layar kecil */
+        width: 90%; /* Full width for smaller screens */
     }
 
     header h1 {
